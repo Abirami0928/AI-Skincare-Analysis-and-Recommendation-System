@@ -1,0 +1,40 @@
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# React
+node_modules/
+dist/
+
+# Generated databases and data
+chroma_db/
+research_chunks/
+uploads/
+cache/
+
+# IDE and system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Skin image datasets
+data/skin_dataset/
+data/skin_dataset_clean/
+
+# Data notebook backups
+data/.ipynb_checkpoints/
+
+# Skin image datasets
+data/skin_dataset/
+data/skin_dataset_clean/
+data/.ipynb_checkpoints/

@@ -1,0 +1,257 @@
+
+.products-page {
+  min-height: 100vh;
+  background: #f8faf7;
+  color: #34483b;
+}
+
+.products-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+  background: #ffffff;
+  border-bottom: 1px solid #e8eee7;
+}
+
+.products-brand {
+  font-size: 21px;
+  font-weight: 700;
+  color: #355b43;
+  text-decoration: none;
+}
+
+.back-home {
+  color: #647568;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.products-intro {
+  text-align: center;
+  padding: 65px 20px 45px;
+}
+
+.eyebrow {
+  color: #719477;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.products-intro h1 {
+  font-size: 38px;
+  margin: 15px 0;
+  color: #354f3f;
+}
+
+.products-intro p {
+  max-width: 600px;
+  margin: auto;
+  color: #7a887d;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.products-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 25px 70px;
+}
+
+.products-toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.products-toolbar h2 {
+  margin-right: auto;
+  font-size: 23px;
+  color: #354f3f;
+}
+
+.products-toolbar select,
+.products-toolbar input {
+  padding: 12px 15px;
+  border: 1px solid #dce5dc;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #526657;
+  font-size: 14px;
+  outline: none;
+}
+
+.products-toolbar select:focus,
+.products-toolbar input:focus {
+  border-color: #78977d;
+}
+
+.products-toolbar button {
+  padding: 13px 20px;
+  background: #52765c;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.products-toolbar button:hover {
+  background: #3d6048;
+}
+
+.products-toolbar button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.product-card {
+  background: #ffffff;
+  border: 1px solid #e8eee7;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 18px rgba(45, 75, 50, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(45, 75, 50, 0.1);
+}
+
+.product-details {
+  padding: 22px;
+}
+
+.product-category {
+  display: inline-block;
+  padding: 6px 11px;
+  background: #edf4eb;
+  color: #52765c;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.product-details h3 {
+  margin: 15px 0 10px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #354f3f;
+}
+
+.product-description {
+  font-size: 13px;
+  color: #78877b;
+  margin-bottom: 18px;
+}
+
+.ingredient-info {
+  padding: 14px;
+  background: #f7faf6;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.ingredient-info strong {
+  font-size: 13px;
+  color: #526b56;
+}
+
+.ingredient-info p {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #78877b;
+  margin-top: 8px;
+  overflow-wrap: anywhere;
+}
+
+.product-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid #edf1ec;
+  padding-top: 17px;
+}
+
+.product-bottom strong {
+  color: #365e43;
+  font-size: 19px;
+}
+
+.product-bottom a {
+  padding: 9px 14px;
+  background: #52765c;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.product-bottom a:hover {
+  background: #3d6048;
+}
+
+.error-message {
+  color: #c0392b;
+  background: #fff0ee;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .products-header {
+    padding: 18px 5%;
+  }
+
+  .products-intro h1 {
+    font-size: 29px;
+  }
+
+  .products-content {
+    padding: 15px 18px 50px;
+  }
+
+  .products-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .products-toolbar h2 {
+    margin-right: 0;
+  }
+
+  .products-toolbar select,
+  .products-toolbar input,
+  .products-toolbar button {
+    width: 100%;
+  }
+}
+.product-image {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background: #f1f5f0;
+  border-radius: 14px 14px 0 0;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
